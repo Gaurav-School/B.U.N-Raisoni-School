@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B.U.N Raisoni School</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background: #004aad;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .contact-info {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #004aad;
+      padding: 12px 25px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s, color 0.3s;
+    }
+    .btn:hover {
+      background: #004aad;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 30px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    form button {
+      background: #004aad;
+      color: #fff;
+      border: none;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #003080;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #004aad;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with all key info -->
+  <header>
+    <h1>B.U.N Raisoni School</h1>
+    <p class="contact-info">
+      📞 1234567890 &nbsp; | &nbsp; ✉️ school@gmail.com
+    </p>
+
+    <!-- Navigation buttons jump to sections below -->
+    <div class="hero-buttons">
+      <a href="#topper" class="btn">Last Year Topper</a>
+      <a href="#about" class="btn">About Us</a>
+      <a href="#feedback" class="btn">Feedback</a>
+    </div>
+  </header>
+
+  <!-- Last Year Topper -->
+  <section id="topper">
+    <h2>Last Year Topper</h2>
+    <p><strong>Name:</strong> Gaurav Saini</p>
+    <p><strong>Class:</strong> 10th Grade</p>
+    <p><strong>Percentage:</strong> 99.99%</p>
+    <p>Congratulations to Priya for her outstanding performance in the board exams!</p>
+  </section>
+
+  <!-- About Us -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      B.U.N Raisoni School is dedicated to providing high-quality education,
+      focusing on both academics and co-curricular activities.
+      Our mission is to nurture creativity, critical thinking,
+      and holistic development in every student.
+    </p>
+  </section>
+
+  <!-- Feedback Form -->
+  <section id="feedback">
+    <h2>Feedback</h2>
+    <form onsubmit="alert('Thank you for your feedback!'); return false;">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+      <button type="submit">Send Feedback</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 B.U.N Raisoni School
+  </footer>
+
+</body>
+</html>
